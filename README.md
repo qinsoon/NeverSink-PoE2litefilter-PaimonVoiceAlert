@@ -1,6 +1,6 @@
 Neversink POE2 Item Filter - 派蒙语音包
 
-基于NeverSink POE2 Item filter，派蒙语音使用https://tools.miku.ac/anime_tts/生成。
+基于NeverSink POE2 Item filter，派蒙语音使用[MikuTools的原神语音合成](https://tools.miku.ac/anime_tts/)生成。
 
 # 安装方法
 
