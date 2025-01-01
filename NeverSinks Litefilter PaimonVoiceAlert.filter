@@ -299,6 +299,17 @@ MinimapIcon 1 Yellow Circle
 SetFontSize 45
 
 Show
+Class "Currency"
+BaseType "Chaos Orb"
+SetTextColor 255 207 92
+SetBorderColor 255 207 92
+SetBackgroundColor 76 51 12
+CustomAlertSound "ChaosOrb.mp3"
+PlayEffect Yellow
+MinimapIcon 1 Yellow Circle
+SetFontSize 45
+
+Show
 BaseType "Gold Key" "Silver Key" "Bronze Key"
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
@@ -311,7 +322,7 @@ SetFontSize 40
 # Currency Tier B: Regal, Vaal ...
 Show
 Class "Currency"
-BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
+BaseType "Gemcutter's Prism" "Vaal Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
 SetBackgroundColor 76 51 12
