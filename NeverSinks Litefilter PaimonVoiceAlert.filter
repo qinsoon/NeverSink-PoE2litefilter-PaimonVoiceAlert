@@ -75,6 +75,25 @@ CustomAlertSound "Valuable.mp3"
 PlayEffect Red
 MinimapIcon 0 Red Star
 
+#--------------------------
+# Valuable Base Items
+#--------------------------
+
+Show
+Class == "Amulets"
+BaseType == "Stellar Amulet"
+Rarity == "Normal"
+PlayEffect Purple
+CustomAlertSound "Base.mp3"
+MinimapIcon 2 Purple Pentagon
+
+Show
+Class == "Rings"
+BaseType == "Sapphire Ring"
+Rarity == "Normal"
+PlayEffect Purple
+CustomAlertSound "Base.mp3"
+MinimapIcon 2 Purple Pentagon
 
 #--------------------------
 # Gold
