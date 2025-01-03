@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  0.2.3
+# VERSION:  0.3.0
 # AUTHOR:   NeverSink
 #
 # This is a mini-filter designed for early PoE2 EA gameplay. I will eventually replace it with a full-fledged filter
@@ -23,6 +23,31 @@
 
 Show
 Rarity Unique
+BaseType == "Ring"
+Sockets > 0
+SetTextColor 175 96 37 255
+SetBorderColor 175 96 37 255
+SetBackgroundColor 53 13 13 255
+PlayAlertSound 3 300
+PlayEffect Brown
+MinimapIcon 1 Brown Star
+SetFontSize 40
+
+Show
+Rarity Unique
+BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic"
+SetFontSize 45
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 0 Red Star
+
+Show
+Rarity Unique
+BaseType == "Ring"
+Sockets > 0
 SetTextColor 175 96 37 255
 SetBorderColor 175 96 37 255
 SetBackgroundColor 53 13 13 255
@@ -31,7 +56,6 @@ PlayEffect Brown
 MinimapIcon 1 Brown Star
 SetFontSize 40
 
-## Divine Orb Style
 Show
 Class "Currency"
 BaseType "Mirror"
@@ -106,6 +130,7 @@ BaseType == "Gold"
 SetTextColor 255 255 255
 SetBorderColor 255 255 255
 PlayEffect Orange Temp
+MinimapIcon 2 White Cross
 
 Show
 AreaLevel < 70
@@ -114,16 +139,30 @@ BaseType == "Gold"
 SetTextColor 255 255 255
 SetBorderColor 255 255 255
 PlayEffect Orange Temp
+MinimapIcon 2 White Cross
 
 Show
 BaseType == "Gold"
 SetTextColor 180 180 180
 SetBorderColor 0 0 0 255
 SetBackgroundColor 0 0 0 180
+MinimapIcon 2 Grey Cross
 
 #--------------------------
 # Uncut Gems
 #--------------------------
+
+# Level 20 gems go tink
+Show
+ItemLevel = 20
+BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+SetFontSize 45
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 0 Red Star
 
 # Always make Spirit gems pop
 Show
@@ -222,6 +261,14 @@ SetTextColor 0 240 190
 SetFontSize 35
 MinimapIcon 2 Cyan Diamond
 PlayEffect Cyan Temp
+
+# Chancing bases
+Show 
+Rarity Normal
+BaseType == "Sapphire Ring" "Stellar Amulet" "Heavy Belt"
+SetBorderColor 0 240 190
+SetFontSize 40
+MinimapIcon 2 Cyan Diamond
 
 # Special A Tier - Sanctum Relics
 Show 
@@ -322,6 +369,7 @@ SetFontSize 40
 # Currency Tier B: Regal, Vaal ...
 Show
 Class "Currency"
+BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
 BaseType "Gemcutter's Prism" "Vaal Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
@@ -379,13 +427,14 @@ SetFontSize 40
 Show
 AreaLevel >= 70
 Class "Currency"
-BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
+BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
 SetTextColor 220 190 132
 SetFontSize 35
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
 Class "Currency"
+BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
 BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
 SetTextColor 220 190 132
 MinimapIcon 2 Grey Circle
@@ -515,8 +564,18 @@ MinimapIcon 1 Yellow Diamond
 
 Show
 Rarity Normal
-Class "Rings" "Amulets" "Belts"
+Class "Rings" "Amulets"
 SetFontSize 40
+
+Show
+Rarity Normal
+Class "Belts"
+AreaLevel < 65
+SetFontSize 35
+
+Show
+Rarity Normal
+Class "Belts"
 
 Show
 Class "Rings" "Amulets" "Belts"
@@ -576,6 +635,15 @@ Quality = 0
 AreaLevel > 70
 Rarity <= Magic
 Class "Flasks"
+
+Show
+BaseType == "Amethyst Ring" "Attuned Wand" "Breach Ring" "Chiming Staff" "Expert Altar Robe" "Expert Barrier Quarterstaff" "Expert Bombard Crossbow" "Expert Brigand Mace" "Expert Cloaked Mail" "Expert Construct Hammer" "Expert Crumbling Maul" "Expert Doubled Gauntlets" "Expert Dualstring Bow" "Expert Dyad Crossbow" "Expert Edged Buckler" "Expert Elite Greathelm" "Expert Feathered Sandals" "Expert Feathered Targe" "Expert Feathered Tiara" "Expert Forlorn Crossbow" "Expert Goldcast Cuffs" "Expert Heavy Crown" "Expert Hexer's Robe" "Expert Hunter Hood" "Expert Hunting Shoes" "Expert Intricate Gloves" "Expert Iron Cuirass" "Expert Keth Raiment" "Expert Leaden Greathammer" "Expert Lizardscale Boots" "Expert Moulded Mitts" "Expert Oak Greathammer" "Expert Omen Crest Shield" "Expert Pathfinder Coat" "Expert Pelt Leggings" "Expert Pelt Mantle" "Expert Plumed Focus" "Expert Rogue Armour" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Scalper's Jacket" "Expert Serpentscale Coat" "Expert Shaman Mantle" "Expert Shielded Helm" "Expert Slicing Quarterstaff" "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Stacked Sabatons" "Expert Steel Plate" "Expert Stone Greaves" "Expert Stone Tower Shield" "Expert Studded Vest" "Expert Tribal Mask" "Expert Vaal Cuirass" "Expert Warpick" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Zealot Bow" "Omen Sceptre" "Plate Belt" "Primed Quiver" "Prismatic Ring" "Rattling Sceptre" "Siphoning Wand" "Solar Amulet" "Voltaic Staff"
+Rarity <= Magic
+
+Hide
+AreaLevel >= 78
+Rarity <= Magic
+Class "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows" "Body Armours" "Wands" "Sceptres" "Staves" "Quivers"
 
 Hide
 AreaLevel >= 78
