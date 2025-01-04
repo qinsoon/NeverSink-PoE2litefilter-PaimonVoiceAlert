@@ -7,11 +7,11 @@ Neversink POE2 Item Filter - 派蒙语音包
 1. 下载最新的[release](https://github.com/qinsoon/NeverSink-PoE2litefilter-PaimonVoiceAlert/releases)或者[当前代码仓库](https://github.com/qinsoon/NeverSink-PoE2litefilter-PaimonVoiceAlert/archive/refs/heads/main.zip)。
 2. 进入游戏，ESC选择“设定”。选择“游戏”，在“物品筛选器”点击右侧文件夹。
 3. 将第1步里下载的zip文件解压缩。
-4. 把解压后的NeverSinks Litefilter PaimonVoiceAlert.filter和所有.mp3文件复制到第2步中打开的文件夹中。即
+4. 把解压后的NeverSinks Litefilter PaimonVoiceAlert.filter复制到第2步中打开的文件夹中。即
    - Windows: `%userprofile%\Documents\My Games\Path of Exile 2`
 5. 复制语音mp3文件
-   - 使用派蒙语音：将Voice_Paimon中的所有mp3复制粘贴到第2步中打开的文件夹中
-   - 使用神里绫华语音：将Voice_Ayaka中的所有mp3复制粘贴到第2步中打开的文件夹中
+   - 使用派蒙语音：将Voice_Paimon中的所有mp3复制粘贴到第2步中打开的文件夹中（复制mp3文件，而不是文件夹）
+   - 使用神里绫华语音：将Voice_Ayaka中的所有mp3复制粘贴到第2步中打开的文件夹中（复制mp3文件，而不是文件夹）
 6. 在“物品筛选器”中，点击刷新按钮。然后在下拉列表中选择NeverSinks Litefilter PaimonVoiceAlert.filter
 
 
