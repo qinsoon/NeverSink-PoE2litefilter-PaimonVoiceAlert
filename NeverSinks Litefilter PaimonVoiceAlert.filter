@@ -28,7 +28,7 @@ Sockets > 0
 SetTextColor 175 96 37 255
 SetBorderColor 175 96 37 255
 SetBackgroundColor 53 13 13 255
-PlayAlertSound 3 300
+CustomAlertSound "Valuable.mp3"
 PlayEffect Brown
 MinimapIcon 1 Brown Star
 SetFontSize 40
@@ -40,7 +40,7 @@ SetFontSize 45
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
 SetBackgroundColor 255 255 255 255
-PlayAlertSound 6 300
+CustomAlertSound "Valuable.mp3"
 PlayEffect Red
 MinimapIcon 0 Red Star
 
@@ -98,26 +98,6 @@ SetBackgroundColor 255 255 255 255
 CustomAlertSound "Valuable.mp3"
 PlayEffect Red
 MinimapIcon 0 Red Star
-
-#--------------------------
-# Valuable Base Items
-#--------------------------
-
-Show
-Class == "Amulets"
-BaseType == "Stellar Amulet"
-Rarity == "Normal"
-PlayEffect Purple
-CustomAlertSound "Base.mp3"
-MinimapIcon 2 Purple Pentagon
-
-Show
-Class == "Rings"
-BaseType == "Sapphire Ring"
-Rarity == "Normal"
-PlayEffect Purple
-CustomAlertSound "Base.mp3"
-MinimapIcon 2 Purple Pentagon
 
 #--------------------------
 # Gold
@@ -268,6 +248,7 @@ Rarity Normal
 BaseType == "Sapphire Ring" "Stellar Amulet" "Heavy Belt"
 SetBorderColor 0 240 190
 SetFontSize 40
+CustomAlertSound "Base.mp3"
 MinimapIcon 2 Cyan Diamond
 
 # Special A Tier - Sanctum Relics
@@ -499,7 +480,7 @@ SetFontSize 40
 #--------------------------
 
 Show
-WaystoneTier < 10
+WaystoneTier < 13
 AreaLevel > 77
 BaseType "Waystone"
 Rarity <= Rare
@@ -536,14 +517,12 @@ BaseType "Expert"
 Rarity >= Magic
 ItemLevel >= 80
 SetBorderColor 255 0 0 255
-SetFontSize 100
 
 Show
 Class "Foci" "Quivers" "Wands" "Staves" "Sceptres"
 Rarity >= Magic
 ItemLevel >= 80
 SetBorderColor 255 0 0 255
-SetFontSize 100
 
 #--------------------------
 # Value Rares
@@ -616,11 +595,11 @@ SetFontSize 35
 
 ## Uncomment this rule to hide low level rares in high level zones
 
-# Hide
-# Rarity Rare
-# DropLevel < 50
-# AreaLevel > 72
-# SetFontSize 35
+Hide
+Rarity Rare
+DropLevel < 50
+AreaLevel > 72
+SetFontSize 35
 
 Show
 Rarity Rare
