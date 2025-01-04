@@ -6,9 +6,13 @@ Neversink POE2 Item Filter - 派蒙语音包
 
 1. 下载最新的[release](https://github.com/qinsoon/NeverSink-PoE2litefilter-PaimonVoiceAlert/releases)或者[当前代码仓库](https://github.com/qinsoon/NeverSink-PoE2litefilter-PaimonVoiceAlert/archive/refs/heads/main.zip)。
 2. 进入游戏，ESC选择“设定”。选择“游戏”，在“物品筛选器”点击右侧文件夹。
-3. 将第1步里下载的zip文件解压缩，并把NeverSinks Litefilter PaimonVoiceAlert.filter和所有.mp3文件复制到第2步中打开的文件夹中。即
+3. 将第1步里下载的zip文件解压缩。
+4. 把解压后的NeverSinks Litefilter PaimonVoiceAlert.filter和所有.mp3文件复制到第2步中打开的文件夹中。即
    - Windows: `%userprofile%\Documents\My Games\Path of Exile 2`
-4. 在“物品筛选器”中，点击刷新按钮。然后在下拉列表中选择NeverSinks Litefilter PaimonVoiceAlert.filter
+5. 复制语音mp3文件
+   - 使用派蒙语音：将Voice_Paimon中的所有mp3复制粘贴到第2步中打开的文件夹中
+   - 使用神里绫华语音：将Voice_Ayaka中的所有mp3复制粘贴到第2步中打开的文件夹中
+6. 在“物品筛选器”中，点击刷新按钮。然后在下拉列表中选择NeverSinks Litefilter PaimonVoiceAlert.filter
 
 
 [![Follow me on Twitter](https://img.shields.io/badge/twitter-grey.svg?style=for-the-badge&logo=twitter)](https://twitter.com/NeverSinkDev) [![FilterBlade Discord](https://img.shields.io/badge/discord-grey.svg?style=for-the-badge&logo=discord)](https://discord.gg/zFEx92a) [![Watch FB Dev on Twitch](https://img.shields.io/badge/twitch-grey.svg?style=for-the-badge&logo=twitch)](https://twitch.tv/neversink) [![Support development on Patreon](https://img.shields.io/badge/patreon-grey.svg?style=for-the-badge&logo=patreon)](https://www.patreon.com/Neversink)
