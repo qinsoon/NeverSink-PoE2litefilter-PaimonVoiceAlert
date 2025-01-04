@@ -517,12 +517,6 @@ Rarity >= Magic
 ItemLevel >= 80
 SetBorderColor 255 0 0 255
 
-Show
-Class "Wands"
-Rarity >= Magic
-ItemLevel >= 81
-SetBorderColor 153 0 153 255
-
 #--------------------------
 # Value Rares
 #--------------------------
