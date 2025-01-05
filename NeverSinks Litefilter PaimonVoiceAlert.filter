@@ -53,6 +53,16 @@ Sockets > 0
 SetTextColor 175 96 37 255
 SetBorderColor 175 96 37 255
 SetBackgroundColor 53 13 13 255
+CustomAlertSound "Valuable.mp3"
+PlayEffect Brown
+MinimapIcon 1 Brown Star
+SetFontSize 40
+
+Show
+Rarity Unique
+SetTextColor 175 96 37 255
+SetBorderColor 175 96 37 255
+SetBackgroundColor 53 13 13 255
 CustomAlertSound "Unique.mp3"
 PlayEffect Brown
 MinimapIcon 1 Brown Star
@@ -343,8 +353,8 @@ SetFontSize 40
 # Currency Tier B: Regal, Vaal ...
 Show
 Class "Currency"
-BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
-BaseType "Gemcutter's Prism" "Vaal Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
+BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
+BaseType "Gemcutter's Prism" "Vaal Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
 SetBackgroundColor 76 51 12
@@ -401,7 +411,7 @@ SetFontSize 40
 Show
 AreaLevel >= 70
 Class "Currency"
-BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
+BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Lesser Jeweller's Orb"
 SetTextColor 220 190 132
 SetFontSize 35
 
@@ -516,6 +526,13 @@ Class "Foci" "Quivers" "Wands" "Staves" "Sceptres"
 Rarity >= Magic
 ItemLevel >= 80
 SetBorderColor 255 0 0 255
+
+# Show
+# Class "Wands"
+# Rarity >= Magic
+# ItemLevel >= 81
+# SetBorderColor 255 0 144 255
+# SetBackgroundColor 255 0 0 200
 
 #--------------------------
 # Value Rares
